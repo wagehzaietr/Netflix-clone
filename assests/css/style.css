@@ -14,6 +14,9 @@
 body{
     background-image: url(../img/stranger-things-wallpaper-838a031a48352cad18125ec37168d261.jpg);
     background-size: cover;
+    object-fit: contain;
+    background-position: calc(71%);
+    backdrop-filter: blur(0.6px);
     background-repeat: no-repeat;
     height: 100vh;
     background-color: black;
