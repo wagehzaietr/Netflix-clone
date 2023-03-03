@@ -1,0 +1,425 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background:url(/assests/img/stranger-things-wallpaper-838a031a48352cad18125ec37168d261.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: black;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo{
+    width: 160px;
+    transition: 0.4s;
+    animation: logo 2s infinite alternate linear;
+}
+
+@keyframes logo{
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+}
+
+.btn{
+    width: 75px;
+    height: 32px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: red;
+    font-size: 16px;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+/* media */
+
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+    button{
+        padding-bottom: px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+
+
+@media (min-width: 390px) {
+    .container{
+        width: 1170px;
+        
+    }
+    .get-started{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .logo{
+        width: 100px;
+    }
+    .container div{
+        padding: 5px 5px;
+    }
+    .container .language-btn{
+        padding: 4px 10px;
+    }
+    .container .btn{
+        padding: 4px 10px;
+        margin-left: 5px;
+        height: 27px;
+    }
+    .text-area{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .text-area h1{
+        font-size: 30px;
+    }
+    .get-started input[type="text"] {
+        width: 65%;
+    }
+    
+    .text-2, .image{
+        flex-basis: 100%;
+    }
+    section .iamge{
+        flex-direction: column;
+      }
+    
+    section .container {
+        flex-direction: column;
+      }
+    
+    section .text-2 {
+        padding: 20px;
+      }
+    
+    section .text-2 h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+    
+    section .text-2 p {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+    }
+
+
+  
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.text-area h1{
+    color: white;
+    font-size: 61px;
+    padding-bottom: 10px;
+}
+
+.text-area .watch{
+    color: white;
+    font-size: 25px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.text-area p{
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.get-started input{
+    min-width: 34%;
+    height: 37px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.425);
+}
+
+.get-started {
+    padding-top: 15px;
+    max-width:1200px ;
+    margin: 20px auto 60px;
+}
+
+.get-started button{
+    height: 37px;
+    padding: 0 10px;
+    min-width: 12%;
+    background-color: red;
+    outline: none;
+    border: none;
+    color: white;
+    margin-left: 1px;
+    font-size: 12px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+    transition: .4s;
+}
+
+button:hover{
+    background-color: rgb(240, 97, 97);
+}
+
+
+
+input:focus{
+    color: red;
+    font-size: 20px;
+}
+
+section{
+    padding: 40px 12%;
+    background-color: rgb(0, 0, 0);
+}
+
+section .container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-2{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.text-2 h2{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.text-2 p{
+    font-size: 30px;
+}
+
+.image{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.image img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.d{
+    bottom: 9%;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.575);
+    padding: 5px;
+    filter: blur(1px);
+    background-color: rgba(128, 128, 128, 0.589);
+}
+
+/* faq start */
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+}
+
+.faq h2{
+    font-weight: 500;
+    font-size: 45px;
+    color: white;
+}
+
+.accord{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accord li{
+    width: 100%;
+    padding: 5px;
+}
+
+.accord li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+label::after{
+    content: '+';
+    position: absolute;
+    font-size: 30px;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type='radio']{
+    display: none;
+}
+
+.accord .content{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+
+.accord input[type='radio']:checked +label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accord input[type='radio']:checked +label::after{
+    transform: rotate(170deg);
+}
+
+small{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+/* footer start */
+.footer{
+    padding: 40px 15% 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 9px solid #333;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer h2{
+    color: #777;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.footer .col a{
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: .3s;
+    text-transform: capitalize;
+}
+
+.footer .col a:hover{
+    color: white;
+}
+
+.copyright-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+.language-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.mark{
+    width: 50px;
+    position: relative;
+    bottom: 10px;
+}
+
+.faq.active{
+    max-height: 300px;
+}
